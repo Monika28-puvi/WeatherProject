@@ -1,27 +1,129 @@
 <html>
-  <head>
-    <title>digital clock</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+
+<head>
+    <title>Google.com</title>
+</head>
+<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.logo{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 140px ;
+    
+}
+input{
+    
+    width: 400px;
+    padding: 15px 50px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+       
+}
+ input:focus{
+    outline: none;
+    box-shadow: 2px 2px 2px 2px #ccc;
+}
+
+.inputsearch{
+    padding-top: 20px;
+}
+
+.btn-container{
+    margin-top: 30px;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #5f6368;
+    margin-right: 10px;
+}
+
+ol.language{
+    list-style: none;
+}
+
+ol.language li{
+    display: inline;
+    margin-right: 10px;
+    /* font-size: 13px; */
+}
+
+
+div.language{
+    margin-top: 40px;
+}
+
+.language ol,li a{
+    text-decoration: none;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    
+    padding: 15px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+
+}
+
+footer ol li{
+    display: inline;
+    padding-right: 30px;
+    color: #676767;
+    font-size: 13px;
+    
+
+} 
+
+
   
-  <body id="body1">
-    <div class="maindiv">
-      <h1>Digital Clock</h1>
-      <div class="subdiv">
-        <h3 id="h">00</h3>
-        <h4>Hours</h4>
-      </div>
-
-      <div class="subdiv">
-        <h3 id="m">00</h3>
-        <h4>Minutes</h4>
-      </div>
-
-      <div class="subdiv">
-        <h3 id="s">00</h3>
-        <h4>Seconds</h4>
-      </div>
+</style>
+<body>
+   
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/640px-Google_2015_logo.svg.png"
+            alt="Google Logo" width="330">
+        <div class="inputsearch">
+            <input type="text"
+                style="background: url(assets/img/mic.ico) no-repeat; background-position: right 15px center; background-size: 35px;">
+        </div>
+        <div class="btn-container">
+            <button class="btn">Google Search</button>
+            <button class="btn">I'm feeling Lucky</button>
+        </div>
+        <div class="language">
+            <ol class="language">
+                <li>Google Offered in</li>
+                <li><a href="#">தமிழ்</a></li>
+                <li><a href="#">മലയാളം</a></li>
+                <li><a href="#">हिन्दी</a></li>
+                <li><a href="#">తెలుగు</a></li>
+            </ol>
+        </div>
     </div>
-   <script src="script.js"></script>
-  </body>
+
+    <footer>
+        <ol>
+            <li>Advertising</li>
+            <li>Bussiness</li>
+            <li>About</li>
+            <li>How search work</li>
+        </ol>
+    </footer>
+
+
+
+</body>
+
 </html>
